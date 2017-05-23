@@ -1,0 +1,70 @@
+body, html{ margin:0; padding: 0;}
+
+body{
+    background: url("fox.png") no-repeat top;
+    background-size: cover;
+}
+
+h1, h2, h3, h4, p, a, li, ul{
+    font-family: arial, sans-serif;
+    color: black;
+    text-decoration: none;
+}
+
+a{
+    font-size: 1.45EM;
+    margin: 0 20px 0 20px;
+    font-weight: bold;
+}
+
+#nav{
+    margin: 50px auto 0 auto;
+    width: 1000px;
+    background: #FFA07A;
+    height: 15px;
+    padding: 20px;
+    box-shadow: 0px 0px 2px #8B4513;
+}
+
+#nav a:hover{
+    color:  #8B4513;
+}
+
+#nav ul{
+    list-style-type: none;
+    float: left;
+    margin: 0 50px;
+
+}
+
+#nav ul li{
+    display: inline;
+
+}
+
+#content{
+    width: 1000px;
+    min-height: 100%;
+    margin: 50px auto 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 160, 122, 0.65);
+}
+
+#contact{
+    width: 170px;
+    min-height: 100%;
+    margin: 50px 80% 0 20%;
+    padding: 20px;
+    text-align: left;
+}
+
+#footer{
+    width: 500px;
+    height: 15px;
+    margin: 12% auto 0 auto;
+    padding: 20px;
+}
+
+#footer p{
+    color: #777;
+}
