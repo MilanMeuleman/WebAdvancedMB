@@ -1,0 +1,9 @@
+<Connect>
+    <Login>
+        <Username>root</Username>
+        <Password>user</Password>
+        <DatabaseName>events</DatabaseName>
+        <hostname>localhost</hostname>
+    </Login>
+</Connect>
+

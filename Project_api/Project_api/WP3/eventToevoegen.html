@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="test_fetch2.js"></script>
+    <title>Event opvragen</title>
+</head>
+<body>
+    <div id="headerStuk">
+        <header>
+            <a href="#"><img class="headerImage" src="images/logo.png" alt="Logo Monkey Business" /></a>
+        </header>
+        <div id="navBar">   
+            <nav>
+                <ul id="linksNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="eventOpvragen.html">Event opvragen</a></li>
+                    <li><a href="eventToevoegen.html">Events toevoegen</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="contentVenster" id="firstContent">
+            <h1>Event toevoegen</h1>
+            <form>
+            Event-ID:<br>
+            <input type="text" name="eventID" value="" class="inputvenster" id="eventId"><br>
+            <br>Persoon-ID:<br>
+            <input type="text" name="name" value="" class="inputvenster" id="personId"><br><br>
+            <br>Startdatum<br>
+            <input type="text" name="name" value="" class="inputvenster" id="startDatum"><br><br>
+            <br>Einddatum:<br>
+            <input type="text" name="name" value="" class="inputvenster" id="eindDatum"><br><br>
+            <br>Beschrijving:<br>
+            <input type="text" name="name" value="" class="inputvenster" id="beschrijving"><br><br>
+            <input type="submit" value="Submit" id="contentToevoegen" onclick="submitClick()">
+        </form>
+    </div>
+</body>
+</html>
