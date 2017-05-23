@@ -267,6 +267,7 @@ header {
     color: #FFF;
     font-size: 1.5em;
     font-family: 'Oswald';
+    margin-top: 20px;
 }
 
 #contentOpvragen:hover {
@@ -276,7 +277,7 @@ header {
 
 /*Event toevoegen*/
 
-#contentToevoegen {
+#contentVerwijderen {
     width: 200px;
     border-style: solid;
     border: 0.5px solid rgb(45, 136, 136);
@@ -286,9 +287,10 @@ header {
     color: #FFF;
     font-size: 1.5em;
     font-family: 'Oswald';
+    margin-top: 20px;
 }
 
-#contentToevoegen:hover {
+#contentVerwijderen:hover {
     background-color: #666;
     cursor: pointer;
 }

@@ -81,7 +81,7 @@ try {
     $router->map('POST','/events/[i:id]',
         function($id) use (&$eventController) {
             $temp = file_get_contents('php://input');
-            var_dump(json_decode($temp));
+            //var_dump(json_decode($temp));
             $eventController->add($id);
         }
     );

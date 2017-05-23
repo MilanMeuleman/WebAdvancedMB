@@ -10,7 +10,7 @@ class EventJsonView implements View
 
         if (isset($data['Event'])) {
             $Event = $data['Event'];
-            var_dump($Event);
+            //var_dump($Event);
             if (sizeof($Event)<=1){
                 echo json_encode(['EventID' => $Event->getEventId(), 'PersoonID' => $Event->getPersoonId(), 'StartDatum' => $Event->getStartDatum(), 'EindDatum' => $Event->getEindDatum(), 'beschrijving' => $Event->getBeschrijving()]);
             }else{

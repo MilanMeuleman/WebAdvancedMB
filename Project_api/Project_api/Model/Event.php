@@ -1,5 +1,4 @@
 <?php
-
 namespace Model;
 class Event
 {
@@ -10,15 +9,14 @@ class Event
     private $beschrijving;
 
 
-    public function __construct($eventId, $persoonId, $startDatum, $eindDatum, $beschrijving)
+    public function __construct($eventId,$persoonId,$startDatum,$eindDatum,$beschrijving)
     {
         $this->eventId = $eventId;
         $this->persoonId = $persoonId;
         $this->startDatum = $startDatum;
-        $this->eindDatum = $eindDatum;
+        $this->eindDatum= $eindDatum;
         $this->beschrijving = $beschrijving;
     }
-
 
     public function getBeschrijving()
     {
@@ -72,6 +70,9 @@ class Event
     {
         $this->startDatum = $startDatum;
     }
+
+
+
 
 
 }
