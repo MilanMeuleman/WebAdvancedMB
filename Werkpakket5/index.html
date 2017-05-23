@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Werkpakket 5</title>
+
+    <script type="text/javascript">
+
+        //standaard zal een element niet verplaatsbaar zijn, om dit toch te kunnen doen zullen we
+        //de methode preventDefault moeten gebruiken (deze cancelt de standaard events als ze cancelbaar zijn)
+        function allowDrop(trigger) {
+            trigger.preventDefault();
+        }
+
+        //draggable="true" zorgt ervoor dat een element verplaatsbaar is!
+        // drag(event) dit geeft aan dat er ook werkelijk aangeklikt is(aan het verplaatsen).
+        // .setData ==> bepaalt het datatype in dit geval text. ID is van de dragged data.
+        function drag(trigger) {
+            trigger.dataTransfer.setData("text", trigger.target.id);
+        }
+
+        //als de data wordt losgelaten word de drop-functie geactiveerd (zie ondrop() in html code)
+        //prevent default houdt dus de standaard actie tegen
+        //de gesleepte data wordt opgehaald en in de variabele data gestoken
+        //met appenchild wordt het drag-element toegevoegd aan het ingesleepte element
+        function drop(trigger) {
+            trigger.preventDefault();
+            var data = trigger.dataTransfer.getData("text");
+            trigger.target.appendChild(document.getElementById(data));
+        }
+    </script>
+
+</head>
+
+<body>
+
+<div align="center">
+<h1> Drag & Drop</h1>
+<hr/>
+<img id="drag1" src="monkeybussines.jpg" draggable="true"
+     ondragstart="drag(event)" width="336" height="150">
+<p id="dragP"  style="font-size:22px;font-weight: bold; background-color: gray;width: 200px" draggable="true" ondragstart="drag(event)">Verplaatsbare tekst</p>
+
+<p>Sleep je afbeelding hierin:</p>
+<div  id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="position:relative;width:400px; height: 250px; border: solid 2px"></div>
+
+    <p></p>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" style="width:400px; height: 250px; border: solid 2px"></div>
+</div>
+
+</body>
+</html>
